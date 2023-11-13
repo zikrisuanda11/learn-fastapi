@@ -4,7 +4,7 @@ fake_items_db = [
     {"item_name": "Baz"}
 ]
 
-def read_item(skip: int = 0, limit: int = 10):
+def read_items(skip: int = 0, limit: int = 10):
     return fake_items_db[skip : skip + limit]
 
 def optional_parameter(item_id: str, q: str | None = None):
