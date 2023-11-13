@@ -13,7 +13,7 @@ router = APIRouter()
 def root():
   return {"hello": "world"}
 
-# query_parameter
+# query_parameter 
 @router.get("/items/", tags=["Query Parameter"])
 def read_items(skip: int = 0, limit: int = 10):
   return read_item(skip, limit)
